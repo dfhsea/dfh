@@ -1,0 +1,80 @@
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mui-content{
+    height: -webkit-fill-available;
+    position: relative;
+    /*background-color: rgb(255,255,255);*/
+}
+.c_header img{
+    width: 100%;
+}
+.isAndroid{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.c_footer ul{
+    /*padding: 10px;*/
+}
+.c_footer button{
+    font-size: 22px;
+    width: 60%;
+    height: 50px;
+    border: 1px solid darkorange;
+    background-color: darkorange;
+}
+.c_footer li{
+    font-family: Source Han Sans CN Regular;
+    margin: 15px 5px;
+}
+.c_footer span{
+    font-size: 24px;
+    color: #2870a5;
+}
+.mui-popover{
+    bottom: 0;
+    border-radius: 7px;
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.popover_header{
+    position: relative;
+    color: #545556;
+    height: 50px;
+    padding: 10px;
+    font-family: Source Han Sans CN Regular;
+    background-color: #e5e5e5;
+    line-height: 30px;
+}
+.right_close{
+    position: absolute;
+    right: 30px;
+    font-weight: bold;
+}
+.mui-popover ul li{
+    font-family: Source Han Sans CN Regular;
+    margin: 15px 0;
+    font-size: 16px;
+}
+.mui-popover ul li img{
+    width: 80%;
+}
+.mui-popover ul li button{
+    border-radius: 20px;
+    width: 80%;
+}
+
+/*html{*/
+    /*font-family: Source Han Sans CN Regular;*/
+/*}*/

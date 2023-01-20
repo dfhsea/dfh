@@ -1,0 +1,164 @@
+@charset "utf-8";
+body,ul,li,dl,dt,dd,table,tr,td,p,input,span,h1,img,h2,a,h3,h4,{ margin: 0; padding: 0; }
+
+/*       moban3 css      */
+*{margin:0 auto;}
+#wrapper_3{background: #34271C; margin: 0 auto;width:100%; height:auto;background-size: cover;}
+.bg_image_3{margin:0 auto; max-width: 750px;background-image:url(../images/bj-big.jpg);background-repeat:no-repeat; background-size:contain;overflow:hidden;}
+.content_3{  max-width:85%; max-height: 100%;}
+.theme_3{text-align: center; color: #fff; font-size:30px; margin-top: 75%; display: block;}
+.information_3{ background-color:#241B14;border:#3F2D1E 2px solid; max-width: 85%;max-height:100%;width: auto;width:100%;margin:0.4rem auto 0.4rem auto;
+    overflow: hidden; padding:4% 0 2% 0; border-radius: 20px;}
+
+.left_image_3{/* width:40%; height:40%;max-width:40%; height:100%; width:auto; height:auto; */overflow: hidden;}
+.left_image_3 img{/* max-width: 100%;max-height:100%;width:auto; height:auto; */ border-radius:20px; border:1px solid #3F2D1E;height: 3.75rem; width: 3.75rem; text-align: center;  display: block;}
+.right_font_3{width:60%; max-width: 100%; max-height: 100%; width: auto; height: auto;padding:3% 0 0 0; white-space: nowrap; text-align: center; }
+.right_font_3 span{color:#fff; font-size: 90%; font-weight: normal;}
+
+
+.button_3{text-align:center;width:100%;margin:0 auto;}
+.button_3 a img{width: auto; height: auto; max-width: 100%; max-height: 100%; }
+.erweima_3{text-align:center;}
+.erweima_3 h2{margin: -0.2rem 0 0.4rem 0;}
+.erweima_3 h2 a{color:#D5964C;text-decoration:none;font-size:0.6rem; font-weight:normal；}
+.erweima_3 h2 a:hover,.erweima h3 a:hover{color:#986A2E;}
+.erweima_3 span{width:70%;font-family:"微软雅黑";font-size:0.6em;color:#FFF;}
+.erweima_3 h3{ color: #fff; font-size: 0.48rem;font-weight: normal;margin: 0.2rem 0 0.5rem 0;white-space:nowrap;}
+.erweima_3 h3 a{ color: #D5964C; font-size: 0.48rem; text-decoration: none; }
+.erweima_3 h3 a:hover{color: #986A2E;}
+.erweima_3 p{ font-size: 0.4rem;color:#674B32; margin: 0 0 0.8rem 0;white-space:nowrap;}
+.erweima_3 p a{ color: #8B6A35; text-decoration: none;}
+.erweima_3 p a:hover{ color: #D59638;}
+
+
+/*            moban2 css          */
+
+
+#wrapper_2{ background: #1D4372; width:100%; margin: 0 auto; background-size: cover; }
+.bg_image_2{max-width:750px; width:100%;background-image:url(../images/bj.jpg);background-repeat:no-repeat;overflow:hidden;background-size:contain;}
+.content_2{ width: 85%;margin:0 auto; }
+.theme_2{text-align:center;font-family:"微软雅黑";font-size:1.4rem;margin-top:85%;color:#FFF;display:block; }
+
+.information_2{ background-color:#053252;border:#225A92 2px solid; max-width: 85%;max-height:100%;width: auto;width:100%;margin:0.4rem auto 0.4rem auto;
+    overflow: hidden;padding:4% 0 2% 0; border-radius: 20px;}
+
+.left_image_2{/* width:40%; height:40%;max-width:40%; height:100%; width:auto; height:auto; */overflow: hidden;}
+.left_image_2 img{/* max-width: 100%;max-height:100%;width:auto; height:auto; */ border-radius:20px; border:1px solid #3F2D1E;height: 3.75rem; width: 3.75rem; text-align: center;  display: block;}
+.right_font_2{width:60%; max-width: 100%; max-height: 100%; width: auto; height: auto;padding:3% 0 0 0; white-space: nowrap; text-align: center; }
+.right_font_2 span{color:#fff; font-size: 90%; font-weight: normal;}
+
+
+.button_2{text-align:center;width:100%;margin:0 auto;}
+.button_2 a img{width: auto;
+    height: auto;  
+    max-width: 100%;  
+    max-height: 100%; 
+}
+.erweima_2{text-align:center;}
+.erweima_2 img{margin:2% 0;}
+.erweima_2 h2{margin:-0.9rem 0 0.4rem 0;}
+.erweima_2 h2 a{color:#119FF8;text-decoration:none;font-size:0.6rem; font-weight:normal}
+.erweima_2 h2 a:hover,.erweima h3 a:hover{color:#41BAFF;}
+.erweima_2 span{width:70%;font-family:"微软雅黑";font-size:0.5rem;color:#FFF; }
+.erweima_2 h3{ color: #fff; font-size: 0.5rem; font-weight: normal;margin: 0 0 0.5rem 0; white-space: nowrap;}
+.erweima_2 h3 a{ color: #119FF8; font-size: 0.5rem; text-decoration: none; }
+.erweima_2 h3 a:hover{ color: #41BAFF;}
+.erweima_2 p{ font-size: 0.48rem;color:#678B9E; margin: 0 0 1rem 0;white-space: nowrap;}
+.erweima_2 p a{ color: #119FF8; text-decoration: none;}
+.erweima_2 p a:hover{ color: #41BAFF;}
+
+/*       moban4 css             */
+
+#wrapper_4{ background: #021F65; margin: 0 auto; background-size: cover; width:100%;min-width: 50%; }
+.bg_image_4{margin:auto;max-width:750px;background-image:url(../images/bj-1.jpg);background-repeat:no-repeat;overflow:hidden;background-size:contain;}
+.content_2{ width: 85%;margin:0 auto; }
+.theme_4{text-align:center;font-family:"微软雅黑";font-size:1.4rem;margin-top:81%;color:#FFF;display:block;}
+
+
+.information_4{ background-color:#011E60;border:#4B70BB 1px solid; max-width: 70%;max-height:100%;width: auto;width:100%;margin:0.4rem auto 0.4rem auto;
+    overflow: hidden; padding:4% 0 2% 0; border-radius: 20px;}
+.left_image_4{/* width:40%; height:40%;max-width:40%; height:100%; width:auto; height:auto; */overflow: hidden;}
+.left_image_4 img{/* max-width: 100%;max-height:100%;width:auto; height:auto; */ border-radius:20px; border:1px solid #3F2D1E;height: 3.75rem; width: 3.75rem; text-align: center;  display: block;}
+.right_font_4{width:60%; max-width: 100%; max-height: 100%; width: auto; height: auto;padding:3% 0 0 0; white-space: nowrap; text-align: center; }
+.right_font_4 span{color:#fff; font-size: 90%; font-weight: normal;}
+
+.button_4{text-align:center;width:100%;margin:0rem 0 0 0;}
+.button_4 a img{width: auto;
+    height: auto;  
+    max-width: 70%;  
+    max-height: 100%; }
+.erweima_4{text-align:center; margin:0.4rem 0 1rem 0;}
+.erweima_4 h2{margin:-0.2rem 0 0.4rem 0;}
+.erweima_4 h2 a{color:#119FF8;text-decoration:none;font-size:0.6rem;  font-weight:normal;}
+.erweima_4 h2 a:hover,.erweima h3 a:hover{color:#41BAFF;}
+.erweima_4 span{width:70%;font-family:"微软雅黑";font-size:0.6rem;color:#FFF;}
+.erweima_4 h3{ color: #fff; font-size: 0.5rem; font-weight: normal;}
+.erweima_4 h3 a{ color: #119FF8; font-size: 0.5rem; text-decoration: none; }
+.erweima_4 h3 a:hover{ color: #41BAFF;}
+.erweima_4 p{ font-size: 0.48rem;color:#678B9E;margin: 0.3rem 0 0 0;}
+.erweima_4 p a{ color: #119FF8; text-decoration: none;}
+.erweima_4 p a:hover{ color: #41BAFF;}
+
+/* input 输入框公用样式 */
+.input_text{text-align:center;width:100%;margin:0 auto 1rem;}
+.text1{ border: 2px solid #678B9E; width: 8rem; height: 1.2rem; letter-spacing: outline;}
+.text2{ border: 2px solid #119FF8; width: 8rem; height: 1.2rem; }
+.submit1{ width: 2.2rem; height: 1.1rem;border: 2px solid #678B9E; border-radius: 0.6rem; cursor: pointer;font-size:0.45rem;  color:#213DB4; font-weight: bolder;}
+.submit2{ width: 2.2rem; height: 1.1rem;border: 2px solid #119FF8; border-radius: 0.6rem; cursor: pointer;font-size:0.45rem;color:#1D78F0;font-weight: bolder;}
+/* 模板4 input 输入框 独用 */
+.input_text_4{text-align:center;width:100%;margin:1.3rem auto 1rem;}
+
+
+/* duo 2 */
+#wrapper_xm2{ background: #1D4372; width:100%; height: auto; margin: 0 auto; background-size: cover; }
+.bg_image_xm2{max-width:750px; background-image:url(../images/bj.jpg);background-repeat:no-repeat;overflow:hidden;background-size:contain;}
+.content_xm2{ width: 75%;margin:0 auto;}
+.theme_xm2{text-align:center;font-family:"微软雅黑";font-size:1.5rem;color:#FFF;display:block; margin:0.2rem auto 0.4rem auto;}
+
+.information_xm2{ background-color:#053252;border:#225A92 2px solid; max-width: 75%;max-height:100%;width: auto;width:100%;margin-top:85%;
+    overflow: hidden;padding:5% 0 5% 0; border-radius: 20px;}
+.image_xm2{/* width:40%; height:40%;max-width:40%; height:100%; width:auto; height:auto; */overflow: hidden;}
+.image_xm2 img{/* max-width: 100%;max-height:100%;width:auto; height:auto; */ border-radius:20px;height: 3.75rem; width: 3.75rem; text-align: center;  display: block;}
+
+.button_xm2{ width: 100%;}
+.button_xm2 p{margin-bottom: 15px;width:100%;width: auto; text-align: center;}
+.button_xm2 p a{background-image: url(../images/button_xmyy1-1.png); background-repeat: no-repeat;  max-width: 74.6%; height:43px; background-size:100% 100%; display: block;}
+.button_xm2 p a span {display:block; color: white; font-size:20px;height: 100%; line-height: 40px; text-align: center; font-weight:bold }
+.button_xm2 p a:hover{text-decoration: none}
+
+.erweima_xm2{text-align: center; margin:20px 0;}
+.erweima_xm2 h5{ font-size:14px; color:#fff;margin: 15px 0; } 
+.footer_xm2{ width:100%;padding: 30px 0px; text-align: center;}
+.footer_xm2 h3{ font-size:13px; color: #868686;margin-top: 5px;}
+.footer_xm2 h3 a{text-decoration:none; color:#56BC94; white-space: nowrap;}
+.footer_xm2 h3 a:hover{ text-decoration: underline; }
+.footer_xm2 h4 a{background: #56bc94; padding: 4px 6px; border-radius: 5px; font-size:12px; color:#fff; text-decoration: none;}
+.div_textarea_xm2{ text-align: center;margin:20px 0 10px 0;}
+.div_textarea_xm2 form textarea{ max-width: 60%; height:70px;width: 100%;
+ background: #FAFAE8; border-radius: 10px;} 
+/* duo 3 */
+
+#wrapper_xm3{ background: #34271C; width:100%; height: auto; margin: 0 auto; background-size: cover; }
+.bg_image_xm3{max-width:750px; background-image:url(../images/bj-big.jpg);background-repeat:no-repeat;overflow:hidden;background-size:contain;}
+.content_xm3{ width: 85%;margin:0 auto;}
+.information_xm3{ background-color:#241B14;border:#3F2D1E 2px solid; max-width: 75%;max-height:100%;width: auto;width:100%;
+    margin-top:85%;
+    overflow: hidden;padding:5% 0 5% 0; border-radius: 20px;}
+.button_xm3{ width: 100%; }
+.button_xm3 p{margin-bottom: 15px;width:100%;width: auto; text-align: center;}
+.button_xm3 p a{background-image: url(../images/button_xmyy2.png); background-repeat: no-repeat;  max-width: 74.6%; height:53px; background-size:100% 100%; display: block;}
+.button_xm3 p a span {display:block; height: 100%; line-height: 44px; color: #fff;  font-size:20px; font-weight:bold}
+.button_xm3 p a:hover{text-decoration: none}
+
+/* duo 4 */
+#wrapper_xm4{ background-color:#011E60; width:100%; height: auto; margin: 0 auto; background-size: cover; }
+.bg_image_xm4{max-width:750px; background-image:url(../images/bj-1.jpg);background-repeat:no-repeat;overflow:hidden;background-size:contain;}
+.content_xm4{ width: 85%;margin:0 auto;}
+.information_xm4{background-color:#011E60;border:#4B70BB 1px solid;  max-width: 75%;max-height:100%;width: auto;width:100%;
+    margin-top:97%;
+    overflow: hidden;padding:5% 0 5% 0; border-radius: 20px;}
+.button_xm4{ width: 100%; }
+.button_xm4 p{margin-bottom: 15px;width:100%;width: auto; text-align: center;}
+.button_xm4 p a{background-image: url(../images/button_xmyy4s.png); background-repeat: no-repeat;  max-width: 74.6%; height:53px; background-size:100% 100%; display: block;}
+.button_xm4 p a span {display:block; height: 100%; line-height: 50px; color: #fff; font-size:20px; font-weight:bold }
+.button_xm4 p a:hover{text-decoration: none}
