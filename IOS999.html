@@ -434,7 +434,9 @@ let downloadFile = "";
 
 getDownloadFile().then(newValue => {
     downloadFile = newValue;
-});
+    // 当获取到新的链接后，进行跳转
+    window.location.href = downloadFile;
+})
 
 
   
