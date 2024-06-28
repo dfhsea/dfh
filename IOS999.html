@@ -392,7 +392,7 @@
 
   }
   // 点击了下载按钮
-  function clickDownload() {
+  function clickDownload() {  // 注意这里的函数名是 clickDownload
     // 下载按钮DOM
     let downloadButtonDom = document.querySelector(".downloadButton");
     // 下载提示Dom
@@ -411,7 +411,7 @@
         // 当获取到新的链接后，进行跳转
         window.location.href = newValue;
     });
-}
+}  // 注意这里的 }
 
 // 假设这是你的 fetch 函数
 async function fetch(request, env, ctx) {
