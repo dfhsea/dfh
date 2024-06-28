@@ -23,7 +23,6 @@
   <link rel="shortcut icon" href="favicon.ico" >
 </head>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "588c817a9aef4f89adbad991ac3fbed6"}'></script><!-- End Cloudflare Web Analytics -->
-<script src="xz.js"></script>
 <style>
   body,
   p,
@@ -418,9 +417,27 @@
   //let downloadFile = "";
 
   // Call the function from the external JS file
-  fetch().then(newValue => {
-      downloadFile = newValue;
-  });
+
+  async function fetch(request, env, ctx) {
+    // 重新从 Durable Objects 中获取 xx 的值
+    const newValue = await env.cx.get('xx');
+    return newValue;
+}
+
+async function getDownloadFile() {
+    // 假设这里的参数是你的 fetch 函数需要的
+    const newValue = await fetch(request, env, ctx);
+    return newValue;
+}
+
+let downloadFile = "";
+
+getDownloadFile().then(newValue => {
+    downloadFile = newValue;
+});
+
+
+  
    window.location.href = downloadFile
   }
   window.onload = function () {
