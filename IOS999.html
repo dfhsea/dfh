@@ -392,7 +392,20 @@
 
   }
   // 点击了下载按钮
-  function clickDownload() {  // 注意这里的函数名是 clickDownload
+  async function fetch(request, env, ctx) {
+    // 重新从 Durable Objects 中获取 xx 的值
+    const newValue = await env.cx.get('xx');
+    return newValue;
+}
+
+async function getDownloadFile() {
+    // 假设这里的参数是你的 fetch 函数需要的
+    const newValue = await fetch(request, env, ctx);
+    return newValue;
+}
+
+// 点击了下载按钮
+async function clickDownload() {  // 注意这里的函数名是 clickDownload
     // 下载按钮DOM
     let downloadButtonDom = document.querySelector(".downloadButton");
     // 下载提示Dom
@@ -407,26 +420,13 @@
     downloadTrustTipsDom.style.display = "block";
     downloadGoTrustDom.style.display = "block";
 
-    getDownloadFile().then(newValue => {
-        // 当获取到新的链接后，进行跳转
-        window.location.href = newValue;
-    });
-}  // 注意这里的 }
-
-// 假设这是你的 fetch 函数
-async function fetch(request, env, ctx) {
-    // 重新从 Durable Objects 中获取 xx 的值
-    const newValue = await env.cx.get('xx');
-    return newValue;
+    let downloadFile = await getDownloadFile();  // 使用 await 获取 newValue 的值
+    // 当获取到新的链接后，进行跳转
+    window.location.href = downloadFile;
 }
 
-async function getDownloadFile() {
-    // 假设这里的参数是你的 fetch 函数需要的
-    const newValue = await fetch(request, env, ctx);
-    return newValue;
-}
 
-  
+
   window.onload = function () {
     let downloadImgDom = document.getElementById("downloadImgDom")
    // downloadImgDom.src = base64_data.downloadButton
