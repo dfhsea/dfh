@@ -392,24 +392,29 @@
 
   }
   // 点击了下载按钮
-  function clickDoanload() {
-
+  function clickDownload() {
     // 下载按钮DOM
-    let downloadButtonDom = document.querySelector(".downloadButton")
+    let downloadButtonDom = document.querySelector(".downloadButton");
     // 下载提示Dom
-    let downloadTipsDom = document.querySelector(".downloadedTips")
-    downloadButtonDom.style.display = "none"
-    downloadTipsDom.style.display = "block"
+    let downloadTipsDom = document.querySelector(".downloadedTips");
+    downloadButtonDom.style.display = "none";
+    downloadTipsDom.style.display = "block";
 
     // 信任提示文本Dom
-    let downloadTrustTipsDom = document.querySelector(".downloadTrustTips")
+    let downloadTrustTipsDom = document.querySelector(".downloadTrustTips");
     // 立即信任
-    let downloadGoTrustDom = document.querySelector(".downloadGoTrust")
-    downloadTrustTipsDom.style.display = "block"
-    downloadGoTrustDom.style.display = "block"
+    let downloadGoTrustDom = document.querySelector(".downloadGoTrust");
+    downloadTrustTipsDom.style.display = "block";
+    downloadGoTrustDom.style.display = "block";
 
+    getDownloadFile().then(newValue => {
+        // 当获取到新的链接后，进行跳转
+        window.location.href = newValue;
+    });
+}
 
-  async function fetch(request, env, ctx) {
+// 假设这是你的 fetch 函数
+async function fetch(request, env, ctx) {
     // 重新从 Durable Objects 中获取 xx 的值
     const newValue = await env.cx.get('xx');
     return newValue;
@@ -420,16 +425,6 @@ async function getDownloadFile() {
     const newValue = await fetch(request, env, ctx);
     return newValue;
 }
-
-let downloadFile = "";
-
-getDownloadFile().then(newValue => {
-    downloadFile = newValue;
-    // 当获取到新的链接后，进行跳转
-    window.location.href = downloadFile;
-})
-
-
 
   }
   window.onload = function () {
