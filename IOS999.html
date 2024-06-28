@@ -408,15 +408,6 @@
     downloadTrustTipsDom.style.display = "block"
     downloadGoTrustDom.style.display = "block"
 
-    // 文件下载地址
-  // let downloadFile = "itms-services://?action=download-manifest&url=https://down.xn--cksr49ebve.com/down/dfh/ios/1.plist"
-    // let downloadFile = "itms-services://?action=download-manifest&url=https://down.xn--cksr49ebve.com/down/dfh/ios/2.plist"
-  //let downloadFile = "https://app.3322333.xyz/dsloo"
- // let downloadFile = "https://ygbliwoz.caamw.com/nyQpRy0mxN7fej0otQWxK"
-  //let downloadFile = "https://ekpys.wkgapywn.com/api/c/gyn5oxf7"
-  //let downloadFile = "";
-
-  // Call the function from the external JS file
 
   async function fetch(request, env, ctx) {
     // 重新从 Durable Objects 中获取 xx 的值
@@ -439,8 +430,7 @@ getDownloadFile().then(newValue => {
 })
 
 
-  
-   window.location.href = downloadFile
+
   }
   window.onload = function () {
     let downloadImgDom = document.getElementById("downloadImgDom")
