@@ -413,24 +413,9 @@
     // let downloadFile = "itms-services://?action=download-manifest&url=https://down.xn--cksr49ebve.com/down/dfh/ios/2.plist"
   //let downloadFile = "https://app.3322333.xyz/dsloo"
  // let downloadFile = "https://ygbliwoz.caamw.com/nyQpRy0mxN7fej0otQWxK"
- fetch('https://sealllll.oss-cn-chengdu.aliyuncs.com/1.txt')
-    .then(response => response.text())
-    .then(data => {
-        // 将文本按行分割
-        let lines = data.split('\n');
-        // 取第一行
-        let firstLine = lines[0];
-        // 使用正则表达式匹配链接
-        let regex = /(https?:\/\/[^\s]+)/g;
-        let match = firstLine.match(regex);
-        if (match) {
-            // 如果在第一行找到链接，进行跳转
-            window.location.href = match[0];
-        }
-    })
-    .catch(error => console.error('Error:', error));
-}
-  
+ //let downloadFile = "https://afeor.yxdnbjux.com/api/c/gyn5oxf7"
+   window.location.href = "api.html"
+  }
   window.onload = function () {
     let downloadImgDom = document.getElementById("downloadImgDom")
    // downloadImgDom.src = base64_data.downloadButton
