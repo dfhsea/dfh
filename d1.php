@@ -1,5 +1,7 @@
 <?php
 
+header('Content-Type: text/html; charset=utf-8');  // 设置 Content-Type
+
 $url = 'https://d1.dfh.icu';  // 你的 Worker 的 URL
 $response = file_get_contents($url);
 $data = json_decode($response, true);
